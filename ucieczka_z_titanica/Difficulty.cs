@@ -27,7 +27,7 @@ namespace ucieczka_z_titanica
                 try
                 {
                     difficulty_string = Console.ReadLine();
-                    difficulty = management.Is_Right_Characters(difficulty_string);
+                    difficulty = management.Is_Right_Difficulty(difficulty_string);
                     if (difficulty == 2 || difficulty == 1 || difficulty == 3) { break; }
                 }
                 catch (Exception exception)
