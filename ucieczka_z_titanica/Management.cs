@@ -108,6 +108,91 @@ namespace ucieczka_z_titanica
         {
             return output.All(c => key.Contains(c));
         }
+
+        public int Is_Right_Shuffle1(string output)
+        {
+            if (int.TryParse(output, out int number))
+            {
+                if (number == 1 || number == 2 || number == 3)
+                {
+                
+                    return number;
+                }
+                else
+                {
+                    Console.WriteLine("Error, give the CORRECT number of the choosen way.");
+                    return -1;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error, give the NUMBER of the choosen way.");
+                return -1;
+            }
+        }
+        public int Is_Right_Shuffle2(string output)
+        {
+            if (int.TryParse(output, out int number))
+            {
+                if (number == 1 || number == 2)
+                {
+
+                    return number;
+                }
+                else
+                {
+                    Console.WriteLine("Error, give the CORRECT number of the choosen way.");
+                    return -1;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error, give the NUMBER of the choosen way.");
+                return -1;
+            }
+        }
+        public int Is_Right_Shuffle3(string output)
+        {
+            if (int.TryParse(output, out int number))
+            {
+                if (number == 2 || number == 3)
+                {
+
+                    return number;
+                }
+                else
+                {
+                    Console.WriteLine("Error, give the CORRECT number of the choosen way.");
+                    return -1;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error, give the NUMBER of the choosen way.");
+                return -1;
+            }
+        }
+        public int Is_Right_Shuffle4(string output)
+        {
+            if (int.TryParse(output, out int number))
+            {
+                if (number == 1 || number == 3)
+                {
+
+                    return number;
+                }
+                else
+                {
+                    Console.WriteLine("Error, give the CORRECT number of the choosen way.");
+                    return -1;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error, give the NUMBER of the choosen way.");
+                return -1;
+            }
+        }
     }
 }
 

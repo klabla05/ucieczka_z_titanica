@@ -20,11 +20,13 @@ namespace ucieczka_z_titanica
             speed.Speed_Timer();
             Begining begining = new Begining();
             Console.WriteLine();
-            begining.Begining_Both(characters);*/
+            begining.Begining_Both(characters);
             Tasks task = new Tasks();
             task.Task1();
             task.Task2();
-            task.Task3();
+            task.Task3();*/
+            Decision_Shuffle decision_shuffle = new Decision_Shuffle();
+            decision_shuffle.Outcome();
         }
     }
 }
