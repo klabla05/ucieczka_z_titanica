@@ -54,6 +54,7 @@ namespace ucieczka_z_titanica
             Console.WriteLine("In the eye blink - you are drowning");
             Console.WriteLine("You try to grab yourself a bit of air, but only make it worse.");
             Console.WriteLine("You blink one more time, and the last one in your life.");
+
         }
     }
 }
