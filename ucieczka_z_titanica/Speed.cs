@@ -9,10 +9,12 @@ namespace ucieczka_z_titanica
     internal class Speed
     {
         private int timeLimit;
-        public Speed() 
+
+        public Speed()
         {
             timeLimit = 0;
         }
+
         public void Difficulty_Speed(Difficulty difficulty)
         {
             int choice = difficulty.Choose_Difficulty();
@@ -33,12 +35,15 @@ namespace ucieczka_z_titanica
                 Console.WriteLine("ERROR");
             }
         }
+
         public async Task Speed_Timer()
         {
             if (timeLimit <= 0) return;
+
             int count = 0;
             Console.WriteLine("Started");
-            Task.Run(async () =>
+
+            await Task.Run(async () =>
             {
                 await Task.Delay(timeLimit);
                 while (count < 5)
@@ -47,8 +52,13 @@ namespace ucieczka_z_titanica
                     await Task.Delay(timeLimit);
                     count++;
                 }
+
+                Console.WriteLine("In the eye blink - you are drowning");
+                Console.WriteLine("You try to grab yourself a bit of air, but only make it worse.");
+                Console.WriteLine("You blink one more time, and the last one in your life.");
+                await Task.Delay(15000);
+                Environment.Exit(0);
             });
         }
-
     }
 }

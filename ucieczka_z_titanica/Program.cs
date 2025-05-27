@@ -10,23 +10,20 @@ namespace ucieczka_z_titanica
     {
         public static async Task Main()
         {
-            /*Speed.Speed_Timer();
             Characters characters = new Characters();
             characters.Choose_Your_Character();
             Console.WriteLine();
             Difficulty difficulty = new Difficulty();
             Speed speed = new Speed();
             speed.Difficulty_Speed(difficulty);
-            speed.Speed_Timer();
             Begining begining = new Begining();
             Console.WriteLine();
-            begining.Begining_Both(characters);
-            Tasks task = new Tasks();
-            task.Task1();
-            task.Task2();
-            task.Task3();*/
-            Decision_Shuffle decision_shuffle = new Decision_Shuffle();
-            decision_shuffle.Outcome();
+            //begining.Begining_Both(characters);
+            speed.Speed_Timer();
+            Outcome outcome = new Outcome();
+            int sum = outcome.Outcome_To_Ending();
+            Ending ending = new Ending();
+            ending.End(outcome, sum);
         }
     }
 }

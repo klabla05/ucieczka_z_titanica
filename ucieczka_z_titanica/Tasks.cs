@@ -30,7 +30,8 @@ namespace ucieczka_z_titanica
                     Console.WriteLine("Error, give the NUMBER and only (without the space etc.");
                 }
             }
-            if(result == 1) { return true; }
+            if(result == 1) return true;
+            If_Not_Right();
             return false;
         }
         public bool Task2()
@@ -54,7 +55,8 @@ namespace ucieczka_z_titanica
                     Console.WriteLine("Error, give the NUMBER and only (without the space etc.");
                 }
             }
-            if (result2 == 1) { return true; }
+            if (result2 == 1) return true;
+            If_Not_Right();
             return false;
         }
         public bool Task3()
@@ -78,8 +80,14 @@ namespace ucieczka_z_titanica
                     Console.WriteLine("Error, give the NUMBER and only (without the space etc.");
                 }
             }
-            if (result2 == 1) { return true; }
+            if (result2 == 1) return true;
+            If_Not_Right();
             return false;
+        }
+        public void If_Not_Right()
+        {
+            Console.WriteLine("You tried very hard, but the lock is not opening. Without the second doubt, you run to your left, just to move further away, *maybe, there is some way to avoid opening this door* - you think");
+            Thread.Sleep(10000);
         }
     }
 }
