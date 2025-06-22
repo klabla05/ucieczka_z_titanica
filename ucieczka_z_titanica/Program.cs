@@ -18,7 +18,7 @@ namespace ucieczka_z_titanica
             speed.Difficulty_Speed(difficulty);
             Begining begining = new Begining();
             Console.WriteLine();
-            //begining.Begining_Both(characters);
+            begining.Begining_Both(characters);
             speed.Speed_Timer();
             Outcome outcome = new Outcome();
             int sum = outcome.Outcome_To_Ending();

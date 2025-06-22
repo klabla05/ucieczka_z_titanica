@@ -24,11 +24,11 @@ namespace ucieczka_z_titanica
             }
             else if (choice == 2)
             {
-                timeLimit = 2000;
+                timeLimit = 90000000;
             }
             else if (choice == 3)
             {
-                timeLimit = 1000;
+                timeLimit = 25200000;
             }
             else
             {
@@ -41,7 +41,6 @@ namespace ucieczka_z_titanica
             if (timeLimit <= 0) return;
 
             int count = 0;
-            Console.WriteLine("Started");
 
             await Task.Run(async () =>
             {

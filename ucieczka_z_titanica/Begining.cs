@@ -109,7 +109,7 @@ namespace ucieczka_z_titanica
             Thread.Sleep(3000);
             Console.WriteLine(" - I believe you may get your headlines, Mr. Ismay");
             Thread.Sleep(7000);
-            Console.WriteLine("This is when you realise that the ship is sinking, and the only way to survive is to RUN");
+            Console.WriteLine("This is when you realise that the ship is sinking, and the only way to survive is to RUN!");
             Thread.Sleep(10000);
         }
         public void Begining_Both(Characters characters)
